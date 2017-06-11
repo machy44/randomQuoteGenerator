@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Generator</title>
+    <link rel=stylesheet type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Quote Generator</h1>
+      <h2>Read and share quotes</h2>
+      <blockquote class = "blockquote">
+          <p id="quoteDisplay">
+            <!--Quotes will display here-->
+          </p>
+          <footer id="quoteAuthor" class="blockquote-footer">
+          <!-- Here the author name will be displayed -->
+          </footer>
+      </blockquote>
+      <div class="buttons">
+        <a class="btn btn-info"  onclick="newQuote()">
+          <i class="fa fa-arrow-right" aria-hidden="true">
+             Next Quote
+          </i>
+        </a>
+        <a href="" id="twitter" target="_blank" class="btn btn-info">
+          <i class="fa fa-twitter" aria-hidden="true">
+             Tweet
+          </i>
+        </a>
+     </div>
+    <footer class="footer">
+        by
+        <a href="https://codepen.io/machy44/"><strong> machy44</strong></a>
+     </footer>
+  </div>
+  </body>
+</html>
