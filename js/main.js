@@ -19,8 +19,8 @@ function newQuote(){
   document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 };
 
-newQuote();*/
-/*This section solves random quote generator with ajax request on api  https://market.mashape.com/andruxnet/random-famous-quotes*/
+newQuote();
+This section solves random quote generator with ajax request on api  https://market.mashape.com/andruxnet/random-famous-quotes*/
 
 function newQuote(){
    $.ajax({
@@ -35,7 +35,7 @@ function newQuote(){
       $('#quoteAuthor').text(data.author);
       let tweetData =  '"' + data.quote + '"' + '  by ' + data.author;
       let escapeSemicolon = tweetData.replace(';', '%3B');
-      twitter.href = "https://twitter.com/intent/tweet?text=" +   escapeSemicolon;
+      twitter.href = "https://twitter.com/intent/tweet?text=" + escapeSemicolon;
     }
    });
 };
